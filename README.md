@@ -37,3 +37,46 @@ StudyBuddy was brought to life using a combination of cutting-edge technologies.
 - React
 - Flask
 - Langchain
+
+
+Installation Instructions
+
+To run StudyBuddy locally, follow the steps below:
+
+Prerequisites
+Make sure you have the following installed on your machine:
+
+Node.js (version 14.x or higher) and npm for the front end. You can download them from here.
+Python 3.x for the back end (Flask app) and pip for installing Python dependencies. Download Python from here.
+Step-by-Step Installation
+Clone the Repository: Clone the StudyBuddy repository to your local machine:
+
+Navigate to the backend folder:
+
+Install the required Python dependencies:
+
+Navigate to the frontend folder:
+
+Start the development server:
+
+Access the Application: Once both the back end and front end are running, open your browser and visit:
+
+http://localhost:3000
+
+Usage Examples
+
+StudyBuddy can help you analyze documents and assignments. Below are some examples of how to interact with the app:
+
+Example 1: Analyze Assignment Documents
+You can upload an assignment document (PDF or Word) to StudyBuddy. It will provide context-sensitive guidance based on the content of the document.
+
+To analyze a document via the back end:
+
+curl -X POST "http://localhost:5000/api/analyze" -F "file=@assignment.pdf"
+
+Example 2: Ask a Question
+Use the built-in chat feature to ask StudyBuddy questions about your documents. For instance:
+
+"What are the main points of my assignment?"
+
+StudyBuddy will provide a summary or explanations based on the document's content.
